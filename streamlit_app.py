@@ -21,7 +21,7 @@ if st.button("Run Agents"):
     if not user_input.strip():
         st.warning("Please enter a valid query!")
     else:
-        with st.spinner("Running agents... Please wait"):
+        with st.spinner("Running agents... Please wait ⏳"):
             st.session_state.result = orchestrator(user_input)
             st.session_state.selected_output = "research"  # default show research first
 
